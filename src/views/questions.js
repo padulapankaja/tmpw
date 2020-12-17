@@ -46,7 +46,7 @@ const Questions = () => {
   };
 
   const nxtBtnClick = () => {
-    answer.push(comment);
+    answer.push("cmt" + comment);
     if (sid == 3) {
       setshowComment(false);
     }
@@ -93,7 +93,7 @@ const Questions = () => {
         variant="contained"
         className={classes.margin}
         disableElevation
-        style={{ backgroundColor: "#ffbab3", color: "#000000" }}
+        style={{ backgroundColor: "transparent", color: "#000000" }}
         startIcon={<KeyboardBackspaceIcon />}
         onClick={() => {
           if (sid < 5 && eid < 6) {
@@ -127,7 +127,6 @@ const Questions = () => {
                 className="comment"
                 style={{ display: showComment ? "block" : "none" }}
               >
-                <label>Comment</label>
                 <input
                   type="text"
                   value={comment}

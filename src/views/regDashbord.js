@@ -81,11 +81,23 @@ const Dashboard = () => {
     .split(",")
     .filter(Boolean);
   //   console.log(q5A);
-  q1.pop();
-  q2.pop();
-  q3.pop();
-  q4.pop();
-  q5.pop();
+
+  console.log("///////", q1.slice(-1).toString().slice(0, 3));
+  if (q1.slice(-1).toString().slice(0, 3) == "cmt") {
+    q1.pop();
+  }
+  if (q2.slice(-1).toString().slice(0, 3) == "cmt") {
+    q2.pop();
+  }
+  if (q3.slice(-1).toString().slice(0, 3) == "cmt") {
+    q3.pop();
+  }
+  if (q4.slice(-1).toString().slice(0, 3) == "cmt") {
+    q4.pop();
+  }
+  if (q5.slice(-1).toString().slice(0, 3) == "cmt") {
+    q5.pop();
+  }
   return (
     // <header className="masthead" style={{ paddingTop: "20px" }}>
     <div>
@@ -97,7 +109,7 @@ const Dashboard = () => {
               <div className="Title">
                 <h3>
                   We’ll send the{" "}
-                  <div style={{ color: "#FF715D", display: "inline" }}>
+                  <div style={{ color: "#c23616", display: "inline" }}>
                     diagnostic
                   </div>{" "}
                   to your email

@@ -13,6 +13,10 @@ const Adashblock = ({ answers, correctA, index }) => {
   //     crr = ["undefined"];
   //   }
 
+  console.log("----------", answers.slice(-1, 0));
+
+  //   if(answers.slice(-1))
+
   console.log("------", index);
   console.log(sid);
 
